@@ -12,10 +12,10 @@
          <font>
             <Font name="Arial Narrow" size="20.0" />
          </font></Label>
-      <TextField layoutX="31.0" layoutY="71.0" prefHeight="30.0" prefWidth="243.0" promptText="Ej: 1234" />
-      <Button layoutX="274.0" layoutY="128.0" mnemonicParsing="false" text="Ingresar">
+      <TextField id="txb_PuertoTest" layoutX="31.0" layoutY="71.0" prefHeight="30.0" prefWidth="243.0" promptText="Ej: 1234" />
+      <Button id="btn_Ingresar" layoutX="274.0" layoutY="128.0" mnemonicParsing="false" text="Ingresar">
          <font>
-            <Font name="Arial Narrow" size="20.0" />
+            <Font name="Arial Narrow" size="18.0" />
          </font>
       </Button>
    </children>
