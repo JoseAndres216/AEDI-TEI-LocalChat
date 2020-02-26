@@ -6,14 +6,14 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="200.0" maxWidth="380.0" minHeight="200.0" minWidth="380.0" prefHeight="200.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="200.0" maxWidth="380.0" minHeight="200.0" minWidth="380.0" prefHeight="200.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Label layoutX="31.0" layoutY="29.0" text="Digite el puerto que desea utilizar">
          <font>
             <Font name="Arial Narrow" size="20.0" />
          </font></Label>
       <TextField id="txb_PuertoTest" layoutX="31.0" layoutY="71.0" prefHeight="30.0" prefWidth="243.0" promptText="Ej: 1234" />
-      <Button id="btn_Ingresar" layoutX="274.0" layoutY="128.0" mnemonicParsing="false" text="Ingresar">
+      <Button id="btn_Ingresar" layoutX="274.0" layoutY="128.0" mnemonicParsing="false" onMouseClicked="#onIngresarbuttonevent" text="Ingresar">
          <font>
             <Font name="Arial Narrow" size="18.0" />
          </font>

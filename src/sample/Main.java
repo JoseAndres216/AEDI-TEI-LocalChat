@@ -14,14 +14,16 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent rootL = FXMLLoader.load(getClass().getResource("sample.fxml"));
         Parent rootMS = FXMLLoader.load(getClass().getResource("MainScreen.fxml"));
-        primaryStage.setTitle("Login");
+
         Scene login = new Scene(rootL);
+        Scene mainscreen = new Scene(rootMS);
+
+        primaryStage.setResizable(false);
+
+        primaryStage.setTitle("Login");
+
         primaryStage.setScene(login);
 
-        primaryStage.setTitle("LocalChat by Jose Andres Rodriguez");
-        Scene mainscreen = new Scene(rootMS);
-        primaryStage.setScene(mainscreen);
-        primaryStage.setResizable(false);
         primaryStage.show();
     }
 
