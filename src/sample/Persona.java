@@ -16,12 +16,12 @@ public class Persona{
 
     public void enviar_mensaje(String Mensaje, int puerto_meta){
         try {
-            System.out.println("Entro");
             Socket client = new Socket("127.0.0.1", puerto_meta);
             OutputStreamWriter writer = new OutputStreamWriter(client.getOutputStream());
             writer.write(Mensaje);
             writer.flush();
-            client.close();}catch(IOException e){
+            client.close();
+        }catch(IOException e){
             e.printStackTrace();
         }
     }

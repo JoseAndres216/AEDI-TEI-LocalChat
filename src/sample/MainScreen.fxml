@@ -8,66 +8,47 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button id="btn_Enviar" layoutX="726.0" layoutY="459.0" mnemonicParsing="false" text="Enviar">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#222222" height="93.0" layoutX="7.0" layoutY="457.0" stroke="BLACK" strokeType="INSIDE" width="782.0" />
+      <Button id="btn_Enviar" layoutX="706.0" layoutY="497.0" mnemonicParsing="false" text="Enviar">
          <font>
             <Font name="Arial Narrow" size="18.0" />
          </font></Button>
-      <TextField id="txb_Message" layoutX="243.0" layoutY="459.0" prefHeight="31.0" prefWidth="474.0">
+      <TextField id="txb_Message" layoutX="24.0" layoutY="497.0" prefHeight="33.0" prefWidth="666.0">
          <font>
             <Font name="Arial Narrow" size="18.0" />
          </font></TextField>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#222222" height="487.0" layoutX="7.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="228.0" />
-      <Button id="btn_Chat1" layoutX="14.0" layoutY="62.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="213.0" text="Chat">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#222222" height="53.0" layoutX="7.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="782.0" />
+      <Label layoutX="25.0" layoutY="21.0" text="Tu puerto:" textFill="WHITE">
          <font>
-            <Font name="Arial Narrow" size="18.0" />
-         </font>
-      </Button>
-      <TextField id="txb_Puerto" layoutX="113.0" layoutY="14.0" prefHeight="31.0" prefWidth="101.0">
-         <font>
-            <Font name="Arial Narrow" size="18.0" />
-         </font>
-      </TextField>
-      <Label layoutX="28.0" layoutY="19.0" text="Tu puerto:" textFill="WHITE">
-         <font>
-            <Font name="Arial Narrow" size="18.0" />
+            <Font name="Arial Narrow Bold" size="18.0" />
          </font>
       </Label>
-      <Button id="btn_Chat2" layoutX="15.0" layoutY="121.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="213.0" text="Chat">
-         <font>
-            <Font name="Arial Narrow" size="18.0" />
-         </font>
-      </Button>
-      <Button id="btn_Chat3" layoutX="14.0" layoutY="180.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="213.0" text="Chat">
-         <font>
-            <Font name="Arial Narrow" size="18.0" />
-         </font>
-      </Button>
-      <Button id="btn_Chat4" layoutX="15.0" layoutY="239.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="213.0" text="Chat">
-         <font>
-            <Font name="Arial Narrow" size="18.0" />
-         </font>
-      </Button>
-      <Button id="btn_Chat5" layoutX="14.0" layoutY="298.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="213.0" text="Chat">
-         <font>
-            <Font name="Arial Narrow" size="18.0" />
-         </font>
-      </Button>
-      <Button id="btn_Chat6" layoutX="15.0" layoutY="357.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="213.0" text="Chat">
-         <font>
-            <Font name="Arial Narrow" size="18.0" />
-         </font>
-      </Button>
-      <Button id="btn_Chat7" layoutX="14.0" layoutY="416.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="213.0" text="Chat">
-         <font>
-            <Font name="Arial Narrow" size="18.0" />
-         </font>
-      </Button>
-      <TextArea id="txs_Chat" editable="false" layoutX="243.0" layoutY="6.0" prefHeight="444.0" prefWidth="543.0">
+      <TextArea id="txs_Chat" editable="false" layoutX="8.0" layoutY="68.0" prefHeight="380.0" prefWidth="782.0">
          <font>
             <Font name="Arial Narrow" size="18.0" />
          </font>
       </TextArea>
+      <Label layoutX="28.0" layoutY="467.0" prefHeight="21.0" prefWidth="67.0" text="Mensaje:" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="486.0" layoutY="22.0" prefHeight="21.0" prefWidth="178.0" text="Mensaje para el puerto:" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField id="txb_Puerto" layoutX="113.0" layoutY="16.0" prefHeight="31.0" prefWidth="101.0">
+         <font>
+            <Font name="Arial Narrow" size="18.0" />
+         </font>
+      </TextField>
+      <TextField id="txb_Puerto" layoutX="664.0" layoutY="16.0" prefHeight="31.0" prefWidth="101.0">
+         <font>
+            <Font name="Arial Narrow" size="18.0" />
+         </font>
+      </TextField>
    </children>
 </Pane>
