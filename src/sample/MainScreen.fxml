@@ -8,14 +8,14 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#222222" height="93.0" layoutX="7.0" layoutY="457.0" stroke="BLACK" strokeType="INSIDE" width="782.0" />
       <Button id="btn_Enviar" layoutX="706.0" layoutY="497.0" mnemonicParsing="false" text="Enviar">
          <font>
             <Font name="Arial Narrow" size="18.0" />
          </font></Button>
-      <TextField id="txb_Message" layoutX="24.0" layoutY="497.0" prefHeight="33.0" prefWidth="666.0">
+      <TextField id="txtMessage" layoutX="24.0" layoutY="497.0" prefHeight="33.0" prefWidth="666.0">
          <font>
             <Font name="Arial Narrow" size="18.0" />
          </font></TextField>
@@ -40,12 +40,12 @@
             <Font name="Arial Narrow Bold" size="18.0" />
          </font>
       </Label>
-      <TextField id="txb_Puerto" layoutX="113.0" layoutY="16.0" prefHeight="31.0" prefWidth="101.0">
+      <TextField id="txtPuertoActual" layoutX="113.0" layoutY="16.0" prefHeight="31.0" prefWidth="101.0">
          <font>
             <Font name="Arial Narrow" size="18.0" />
          </font>
       </TextField>
-      <TextField id="txb_Puerto" layoutX="664.0" layoutY="16.0" prefHeight="31.0" prefWidth="101.0">
+      <TextField id="txtPuertoDestino" layoutX="664.0" layoutY="16.0" prefHeight="31.0" prefWidth="101.0">
          <font>
             <Font name="Arial Narrow" size="18.0" />
          </font>

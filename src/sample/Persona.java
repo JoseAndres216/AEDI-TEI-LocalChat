@@ -10,7 +10,7 @@ import java.net.Socket;
 public class Persona{
     private int puerto;
 
-    public Persona(int puerto){
+    public void setpuerto(int puerto){
         this.puerto = puerto;
     }
 
@@ -31,7 +31,6 @@ public class Persona{
         try{
             ServerSocket server = new ServerSocket(this.puerto);
             while(active){
-                System.out.println("Listen");
                 Socket entrante = server.accept();
                 BufferedReader lector = new BufferedReader(new InputStreamReader(entrante.getInputStream()));
                 String mensaje_recibido = lector.readLine();
