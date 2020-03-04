@@ -6,10 +6,16 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
+/**
+ * La clase Main solamente se encarga de inicializar la interfaz grafica
+ */
 public class Main extends Application {
 
+    /**
+     * El metodo start inicializa la interfaz grafica
+     * @param primaryStage la pantalla en la que se dibuja la interfaz
+     * @throws Exception en caso de algun error
+     */
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent rootL = FXMLLoader.load(getClass().getResource("sample.fxml"));
@@ -21,7 +27,10 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-
+    /**
+     * El metodo main solamente llama al metodo start
+     * @param args
+     */
     public static void main(String[] args) {
         launch(args);
     }
