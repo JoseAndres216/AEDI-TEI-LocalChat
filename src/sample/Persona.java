@@ -8,19 +8,24 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class Persona{
-    private int puerto;
+    private int puertoactual;
+    private int puertodestino;
 
-    public void setpuerto(int puerto){
-        this.puerto = puerto;
+    public void setPuertoactual(int puertoactual){
+        this.puertoactual = puertoactual;
     }
+    public void setPuertodestino(int puertodestino){ this.puertodestino = puertodestino; }
 
-    public void enviar_mensaje(String Mensaje, int puerto_meta){
+    public void enviar_mensaje(String Mensaje){
         try {
-            Socket client = new Socket("127.0.0.1", puerto_meta);
+            Socket client = new Socket("127.0.0.1", this.puertodestino);
+            System.out.println("2");
             OutputStreamWriter writer = new OutputStreamWriter(client.getOutputStream());
             writer.write(Mensaje);
+            System.out.println("3");
             writer.flush();
             client.close();
+            System.out.println("4");
         }catch(IOException e){
             e.printStackTrace();
         }
@@ -29,14 +34,19 @@ public class Persona{
     public void escuchar(){
         boolean active = true;
         try{
-            ServerSocket server = new ServerSocket(this.puerto);
+            ServerSocket server = new ServerSocket(this.puertoactual);
             while(active){
                 Socket entrante = server.accept();
                 BufferedReader lector = new BufferedReader(new InputStreamReader(entrante.getInputStream()));
                 String mensaje_recibido = lector.readLine();
-                System.out.println("Mensaje: " + mensaje_recibido);
+                System.out.println("Mensaje que se debia mostrar: " + mensaje_recibido);
+                Controller c = new Controller();
+                c.RefrescarConversacion(mensaje_recibido);
+                System.out.println("6");
                 entrante.close();
+                System.out.println("7");
             }
+            System.out.println("8");
         } catch (IOException e){
             e.printStackTrace();
         }

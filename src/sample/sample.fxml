@@ -7,23 +7,63 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="207.0" prefWidth="452.0" xmlns="http://javafx.com/javafx/8.0.211" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#222222" height="192.0" layoutX="10.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" width="432.0" />
-      <Label layoutX="81.0" layoutY="15.0" prefHeight="49.0" prefWidth="291.0" text="Digite el puerto que desea utilizar" textFill="WHITE">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#222222" height="93.0" layoutX="14.0" layoutY="464.0" stroke="BLACK" strokeType="INSIDE" width="222.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#222222" height="93.0" layoutX="246.0" layoutY="465.0" stroke="BLACK" strokeType="INSIDE" width="550.0" />
+      <Button id="btnEnviar" fx:id="btnEnviar" layoutX="713.0" layoutY="505.0" mnemonicParsing="false" onAction="#onEnviarbuttonaction" text="Enviar">
+         <font>
+            <Font name="Arial Narrow Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField id="txtMensaje" fx:id="txtMensaje" disable="true" editable="false" layoutX="265.0" layoutY="505.0" prefHeight="33.0" prefWidth="432.0">
+         <font>
+            <Font name="Arial Narrow" size="18.0" />
+         </font>
+      </TextField>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#222222" height="218.0" layoutX="14.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="222.0" />
+      <Label layoutX="54.0" layoutY="72.0" text="Puerto a utilizar:" textFill="WHITE">
          <font>
             <Font name="Arial Narrow Bold" size="22.0" />
-         </font></Label>
-      <TextField id="txtPuerto" fx:id="txtPuerto" layoutX="134.0" layoutY="71.0" prefHeight="39.0" prefWidth="185.0" text="40000" />
-      <Button id="btn_Ingresar" layoutX="28.0" layoutY="134.0" mnemonicParsing="false" onAction="#onIngresarbuttonaction" prefHeight="39.0" prefWidth="86.0" text="Ingresar">
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="473.0" prefHeight="21.0" prefWidth="67.0" text="Mensaje:" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField id="txtPuertoActual" fx:id="txtPuertoActual" layoutX="25.0" layoutY="117.0" prefHeight="39.0" prefWidth="101.0" text="40000" />
+      <Button id="btnIngresar" fx:id="btnINgresar" layoutX="139.0" layoutY="117.0" mnemonicParsing="false" onAction="#onIngresarbuttonaction" prefHeight="39.0" prefWidth="86.0" text="Ingresar">
          <font>
             <Font name="Arial Narrow Bold" size="18.0" />
          </font>
       </Button>
-      <Button id="btn_Ingresar" layoutX="346.0" layoutY="134.0" mnemonicParsing="false" onAction="#onSalirbuttonaction" prefHeight="39.0" prefWidth="78.0" text="Salir">
+      <Button id="btnSalir" fx:id="btnSalir" layoutX="135.0" layoutY="492.0" mnemonicParsing="false" onAction="#onSalirbuttonaction" prefHeight="39.0" prefWidth="86.0" text="Salir">
          <font>
             <Font name="Arial Narrow Bold" size="18.0" />
          </font>
       </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#222222" height="218.0" layoutX="14.0" layoutY="238.0" stroke="BLACK" strokeType="INSIDE" width="222.0" />
+      <Label layoutX="23.0" layoutY="290.0" prefHeight="50.0" prefWidth="207.0" text="Mensaje para el puerto:" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField id="txtPuertoDestino" fx:id="txtPuertoDestino" disable="true" editable="false" layoutX="25.0" layoutY="349.0" prefHeight="39.0" prefWidth="101.0">
+         <font>
+            <Font name="Arial Narrow" size="18.0" />
+         </font>
+      </TextField>
+      <Button id="btnVerificar" fx:id="btnVerificar" layoutX="139.0" layoutY="349.0" mnemonicParsing="false" onAction="#onVerificarbuttonaction" prefHeight="39.0" prefWidth="86.0" text="Verificar">
+         <font>
+            <Font name="Arial Narrow Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button id="btnInfo" fx:id="btnInfo" layoutX="29.0" layoutY="491.0" mnemonicParsing="false" onAction="#onInfobuttonaction" prefHeight="39.0" prefWidth="86.0" text="Info">
+         <font>
+            <Font name="Arial Narrow Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField id="txtPuertoActual" fx:id="txtConversacion" editable="false" layoutX="246.0" layoutY="14.0" prefHeight="442.0" prefWidth="550.0" />
    </children>
 </Pane>
